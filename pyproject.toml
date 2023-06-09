@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "segmentation-api"
+version = "0.1.0"
+description = "Auto segment audio files based on duration of silences"
+authors = ["Sai Praneeth Reddy"]
+readme = "README.md"
+packages = [{include = "segmentation_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tqdm = "^4.65.0"
+sqlalchemy = "^2.0.15"
+psycopg2-binary = "^2.9.6"
+pydub = "^0.25.1"
+fastapi = "^0.96.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
